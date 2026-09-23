@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sitemap – Waru SEO Practice</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">Waru<span>SEO</span></a>
+      <button class="hamburger" aria-label="Toggle menu" onclick="document.querySelector('nav ul').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="sitemap.html" class="active">Sitemap</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="post-hero">
+    <h1>Sitemap</h1>
+    <p class="post-meta">A complete overview of all pages on Waru SEO Practice</p>
+  </div>
+
+  <section>
+    <div class="container">
+      <p style="margin-bottom:2rem;color:var(--clr-muted);">
+        This is the <strong>HTML sitemap</strong> — a human-friendly overview of all pages.
+        For the machine-readable version used by search engines, see the <a href="sitemap.xml">XML sitemap</a>.
+      </p>
+
+      <div class="sitemap-tree">
+        <ul>
+
+          <li>
+            <a href="index.html" class="sitemap-link-main">Home</a>
+          </li>
+
+          <li>
+            <a href="about.html" class="sitemap-section">📄 About</a>
+          </li>
+
+          <li>
+            <a href="blog/index.html" class="sitemap-section">📝 Blog</a>
+            <ul>
+              <li class="sitemap-leaf"><a href="blog/what-is-seo.html">→ What is SEO?</a></li>
+              <li class="sitemap-leaf"><a href="blog/keyword-research-for-beginners.html">→ Keyword Research for Beginners</a></li>
+              <li class="sitemap-leaf"><a href="blog/link-building-basics.html">→ Link Building Basics</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="contact.html" class="sitemap-section">✉️ Contact</a>
+          </li>
+
+          <li>
+            <a href="sitemap.html" class="sitemap-section">🗺️ Sitemap</a>
+            <ul>
+              <li class="sitemap-leaf"><a href="sitemap.html">HTML Sitemap (this page)</a></li>
+              <li class="sitemap-leaf"><a href="sitemap.xml">XML Sitemap</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="robots.txt" class="sitemap-section">🤖 robots.txt</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="sitemap.html">Sitemap</a>
+    </div>
+    <p>&copy; 2026 Waru SEO Practice. Built for learning purposes.</p>
+  </footer>
+
+</body>
+</html>

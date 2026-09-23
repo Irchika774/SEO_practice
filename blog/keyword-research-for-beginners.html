@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keyword Research for Beginners – Waru SEO Practice</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">Waru<span>SEO</span></a>
+      <button class="hamburger" aria-label="Toggle menu" onclick="document.querySelector('nav ul').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="index.html" class="active">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../sitemap.html">Sitemap</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="post-hero">
+    <h1>Keyword Research for Beginners</h1>
+    <p class="post-meta">By Waru &bull; September 8, 2026 &bull; 10 min read</p>
+  </div>
+
+  <article class="post-body">
+
+    <h2>Introduction</h2>
+    <p><strong>Keyword research</strong> is the foundation of every successful SEO strategy. Before you can optimise a page, you need to know <em>what words and phrases your target audience actually types into Google</em>.</p>
+    <p>But keyword research doesn't happen in a vacuum. To understand why certain pages rank and others don't, you first need to understand two critical processes: <strong>crawling</strong> and <strong>indexing</strong>.</p>
+
+    <h2>What is Crawling?</h2>
+    <p><strong>Crawling</strong> is how search engines discover content on the web. Google uses automated programs called <em>crawlers</em> (also called spiders or bots — most notably <strong>Googlebot</strong>) to browse the internet by following hyperlinks from page to page.</p>
+
+    <h3>How Googlebot crawls a site</h3>
+    <ol>
+      <li>Googlebot starts from a list of known URLs (from previous crawls, sitemaps, or submitted links).</li>
+      <li>It visits each page, reads its content, and follows all the links it finds.</li>
+      <li>Newly discovered links are added to the crawl queue.</li>
+      <li>The cycle repeats continuously — Google recrawls popular pages more often.</li>
+    </ol>
+
+    <h3>What can block crawling?</h3>
+    <ul>
+      <li>A <code>robots.txt</code> file that disallows bots</li>
+      <li>Broken or missing internal links</li>
+      <li>Login walls or JavaScript-only content</li>
+      <li>Very slow page load times</li>
+    </ul>
+
+    <h2>What is Indexing?</h2>
+    <p>After a page is crawled, Google decides whether to <strong>index</strong> it — that is, add it to Google's giant database of known pages. Only indexed pages can appear in search results.</p>
+
+    <h3>What affects indexing?</h3>
+    <ul>
+      <li><strong>Content quality</strong>: Thin or duplicate content may not be indexed.</li>
+      <li><strong>Meta robots tag</strong>: <code>&lt;meta name="robots" content="noindex"&gt;</code> tells Google not to index the page.</li>
+      <li><strong>Canonical tags</strong>: Tell Google which version of a URL is the "master" copy.</li>
+      <li><strong>HTTP status codes</strong>: A 404 (Not Found) or 5xx error means the page won't be indexed.</li>
+    </ul>
+
+    <h2>What is robots.txt?</h2>
+    <p>The <strong>robots.txt</strong> file sits at the root of your website (e.g., <code>https://example.com/robots.txt</code>) and instructs search engine bots which pages or directories they are <em>allowed</em> or <em>not allowed</em> to crawl.</p>
+
+    <h3>Basic robots.txt syntax</h3>
+    <pre style="background:#f1f5f9;padding:1rem;border-radius:8px;font-size:.88rem;overflow-x:auto;"><code># Allow everything (default)
+User-agent: *
+Allow: /
+
+# Block a specific folder
+User-agent: *
+Disallow: /admin/
+
+# Point to your XML sitemap
+Sitemap: https://example.com/sitemap.xml</code></pre>
+
+    <h2>What is a Broken Link?</h2>
+    <p>A <strong>broken link</strong> (also called a <em>dead link</em>) is a hyperlink that leads to a page that no longer exists or cannot be reached — typically returning a <strong>404 Not Found</strong> error.</p>
+
+    <h3>Why broken links hurt SEO</h3>
+    <ul>
+      <li>They waste crawl budget — Googlebot keeps trying to fetch pages that don't exist.</li>
+      <li>They block the flow of <em>link equity</em> (PageRank) through your site.</li>
+      <li>They create a bad user experience, increasing bounce rates.</li>
+    </ul>
+
+    <h3>How to fix broken links</h3>
+    <ol>
+      <li>Use a tool like <strong>Screaming Frog</strong> or <strong>Google Search Console</strong> to detect broken links.</li>
+      <li>If the content moved, set up a <strong>301 redirect</strong> from the old URL to the new one.</li>
+      <li>If the content is permanently gone, remove the link or replace it with a working alternative.</li>
+    </ol>
+
+    <h2>Keyword Research Step-by-Step</h2>
+
+    <h3>Step 1 – Brainstorm seed keywords</h3>
+    <p>Start with a broad topic related to your niche. If you sell athletic gear, a seed keyword might be <strong>"running shoes"</strong>.</p>
+
+    <h3>Step 2 – Understand keyword metrics</h3>
+    <ul>
+      <li><strong>Search Volume</strong>: How many times per month the keyword is searched. "running shoes" → ~450,000 searches/month.</li>
+      <li><strong>Keyword Difficulty (KD)</strong>: How hard it is to rank.</li>
+      <li><strong>Search Intent</strong>: What does the user actually want? Informational, navigational, commercial, or transactional?</li>
+    </ul>
+
+    <h3>Step 3 – Find long-tail variants</h3>
+    <p>Instead of targeting "running shoes" (very competitive), look for <strong>long-tail keywords</strong>:</p>
+    <ul>
+      <li>"best running shoes for flat feet"</li>
+      <li>"lightweight trail running shoes under ₹5000"</li>
+      <li>"how to choose running shoes for beginners"</li>
+    </ul>
+
+    <h3>Step 4 – Analyse the competition</h3>
+    <p>Search your target keyword and examine the top 10 results. Ask:</p>
+    <ul>
+      <li>What type of content is ranking?</li>
+      <li>How long are the articles?</li>
+      <li>How many backlinks do the top pages have?</li>
+      <li>Can I create something significantly better?</li>
+    </ul>
+
+    <h3>Step 5 – Map keywords to pages</h3>
+    <p>Each page on your site should target <strong>one primary keyword</strong> and a handful of semantically related terms.</p>
+
+    <h2>Free Keyword Research Tools</h2>
+    <ul>
+      <li><strong>Google Search Console</strong> – see which queries you already rank for</li>
+      <li><strong>Google Keyword Planner</strong> – search volume and CPC data</li>
+      <li><strong>Ubersuggest</strong> – free tier with keyword ideas</li>
+      <li><strong>AnswerThePublic</strong> – question-based keyword discovery</li>
+      <li><strong>Google Autocomplete</strong> – just start typing in the search bar!</li>
+    </ul>
+
+    <h2>Summary</h2>
+    <p>Before you can rank for keywords like "running shoes", Google must first <strong>crawl</strong> and <strong>index</strong> your pages. Your <strong>robots.txt</strong> file guides bots, and <strong>broken links</strong> can silently kill your rankings. Once the technical foundation is solid, use keyword research to find realistic, high-intent terms you can actually compete for.</p>
+
+    <hr style="margin:2.5rem 0;border-color:var(--clr-border);" />
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+      <a href="what-is-seo.html">← Previous: What is SEO?</a>
+      <a href="link-building-basics.html">Next: Link Building Basics →</a>
+    </div>
+
+  </article>
+
+  <footer>
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="index.html">Blog</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../sitemap.html">Sitemap</a>
+    </div>
+    <p>&copy; 2026 Waru SEO Practice. Built for learning purposes.</p>
+  </footer>
+
+</body>
+</html>

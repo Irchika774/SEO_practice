@@ -1,0 +1,3 @@
+# robots.txt – practice filling this in yourself!
+# Hint: Add User-agent, Allow/Disallow rules, and a Sitemap pointer.
+
